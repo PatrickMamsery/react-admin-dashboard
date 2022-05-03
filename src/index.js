@@ -1,14 +1,22 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+import './assests/boxicons-2.1.2/css/boxicons.min.css';
+import './assests/css/grid.css';
+import './assests/css/index.css';
+
+import Layout from './components/layout/Layout';
+
+document.title = 'Dashboard';
+
+ReactDOM.render(
+  
+    <React.StrictMode>
+      <Layout />
+    </React.StrictMode>
+  ,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
