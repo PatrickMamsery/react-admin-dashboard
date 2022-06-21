@@ -7,8 +7,8 @@ import Customers from '../pages/Customers';
 const MyRoutes = () => {
   return (
     <Switch>
-        <Route path='/' exact element={<Dashboard />} />
-        <Route path='/customers' element={<Customers />} />
+        <Route path='/' exact component={Dashboard} />
+        <Route path='/customers' component={Customers} />
     </Switch>
   )
 }
